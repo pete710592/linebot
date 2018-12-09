@@ -1,7 +1,3 @@
-【Linebot on RaspberryPi】<br><br>
-
-
-
 Install
 -------
     $ pip install line-bot-sdk
