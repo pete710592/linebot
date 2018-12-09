@@ -31,13 +31,13 @@ MessageTemplateAction(
 	text='action #102'  # after push the button, displayed in the dialog
 )
 ```
-  PostbackTemplateAction,MessageTemplateAction 這兩個功能不知道差在哪，還要查
+PostbackTemplateAction,MessageTemplateAction 這兩個功能不知道差在哪，還要查
 
 **3. Line18**
 ```python
 text='You have 2 mails. \nWhat can I do for you?'
 ```
-  幾封信是需要接收的
+目前暫時先假定有2封信，到時候會有幾封信是需要接收的還要再改(subscribe)
 
 
 
