@@ -10,6 +10,9 @@ Install
 
 Current status
 -------
+mail_trigger.py目前是用來「觸發」Linebot用的<br>
+他會產生選項讓使用者選擇，當使用者決定好要哪個選項時，會觸發到app.py內的內容
+
 **1. Line17**
 ```python
 title='Duckiebot #01'
