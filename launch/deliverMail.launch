@@ -6,7 +6,12 @@
   	<arg name="config" default="baseline" doc="Specify a config."/>
   	<arg name="param_file_name" default="default" doc="Specify a param file. ex:megaman"/>
     
+	<!-- get_ID_mail -->
+    <node pkg="$(arg pkg_name)" type="get_ID_mail.py" name="get_ID_mail" output="screen">
+    </node>
+	
     <!-- mail_trigger -->
     <node pkg="$(arg pkg_name)" type="mail_trigger.py" name="mail_trigger" output="screen">
     </node>
+	
 </launch>
