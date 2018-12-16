@@ -1,13 +1,13 @@
 <launch>
     <arg name="pkg_name" value="linebot"/>
   	<arg name="node_name" default="linebot_node"/>
-  	<arg name="veh" default="ss19" doc="Name of vehicle. ex: megaman"/>
+  	<arg name="veh" doc="Name of vehicle. ex: megaman"/>
   	<arg name="local" default="false" doc="true for running on laptop. false for running on vehicle."/>
   	<arg name="config" default="baseline" doc="Specify a config."/>
   	<arg name="param_file_name" default="default" doc="Specify a param file. ex:megaman"/>
     
-	<!-- get_ID_mail -->
-    <node pkg="$(arg pkg_name)" type="get_ID_mail.py" name="get_ID_mail" output="screen">
+	<!-- loop_readMail -->
+    <node pkg="$(arg pkg_name)" type="loop_readMail.py" name="loop_readMail" output="screen">
     </node>
 	
     <!-- mail_trigger -->

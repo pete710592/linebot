@@ -10,8 +10,6 @@ from hbc_msgs.msg import MailStamped
 line_bot_api = LineBotApi('6CXOEtUWC0yteVKp84RJaUHuaJBf8i8VryR1mtT9gvqSuN2v5gaYl9EdUuYuUebPGMFCiQsWt3xKrLjtB6JlmQkaBagdDBBTsyi/8mL+TZlQQttuYdT5jCIRkVds4oyP+Vj2L9Ty9aYyN6wU8y7MaAdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
 handler = WebhookHandler('22ee390e67704d39b3ca17d0881f30de')
-# User ID
-#to = "U61f94258daedd7a7e8c2b9519e64e13b"
 
 class MailTrigger(object):
 	def __init__(self):
@@ -22,7 +20,7 @@ class MailTrigger(object):
 		ID = mail_msg.ID
 		mailNum = mail_msg.mailNum
 		self.deliver(ID, mailNum)
-		print("subscribe Successfully!")  #######################################
+		print("An inquiry message has been sent successfully.")
 		
 	def deliver(self, ID, mailNum):
 		message = TemplateSendMessage(
@@ -44,7 +42,7 @@ class MailTrigger(object):
 				]
 			)
 		)
-		line_bot_api.push_message(ID, message)
+		line_bot_api.push_message(ID, message)  #send a message to a specified client
 
 if __name__ == "__main__":
 	rospy.init_node("mail_trigger",anonymous=False)
