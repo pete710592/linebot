@@ -1,10 +1,10 @@
 Install
 -------
     $ pip install line-bot-sdk
-    $ pip install line-bot-sdk
     $ pip install flask
     $ cd ~/duckietown/catkin_ws/src
     $ git clone https://github.com/pete710592/linebot.git
+    $ git clone https://github.com/pete710592/hbc_msgs.git
 
 
 
